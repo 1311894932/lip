@@ -1,0 +1,6 @@
+# Runtime outputs of gradio_app.py
+results/
+
+# Python cache
+__pycache__/
+*.py[cod]
