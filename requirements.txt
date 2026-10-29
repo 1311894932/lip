@@ -1,0 +1,23 @@
+# Tested with Python 3.11, CUDA 12.4 (torch 2.6.0+cu124).
+# System tools: ffmpeg and ffprobe must be on PATH.
+torch==2.6.0
+numpy==1.24.4
+pillow==11.3.0
+opencv-python==4.5.5.64
+imageio==2.37.2
+imageio-ffmpeg==0.6.0
+einops==0.8.1
+tqdm==4.67.1
+diffusers==0.39.0      # tested with 0.39.0.dev0
+ffmpeg-python==0.2.0
+ftfy==6.3.1
+regex==2025.11.3
+modelscope==1.33.0
+huggingface_hub==0.36.2
+safetensors==0.8.0     # tested with 0.8.0rc0
+transformers==4.56.2
+onnxruntime-gpu==1.22.0
+matplotlib>=3.5        # only imported by DWPose
+gradio==5.50.0         # gradio 6 needs huggingface_hub>=1.16, which conflicts with transformers 4.56
+
+# Optional, faster attention (picked up automatically when installed): flash-attn
